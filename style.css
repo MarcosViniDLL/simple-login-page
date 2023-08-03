@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login{
+    position: relative;
+    width: 470px;
+    height: 450px;
+    padding: 10px 30px;
+    background: #fff;
+    border: 1px solid #7931f4;
+    border-radius: 12px;
+}
+
+.login-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0 50px 0;
+}
+
+.login-header header{
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.login-header p{
+    color: #555;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+}
+
+.input-box label{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #555;
+    transition: .15s ease-in-out;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+}
+
+.input-box .input-field{
+    font-size: 1em;
+    color: #333;
+    padding-left: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+}
+
+.input-box input[type="pass"]{
+    margin-bottom: 10px;
+}
+
+.input-box .input-field:focus{
+    border: 2px solid #8749f3;
+}
+
+.input-field:focus ~ label, .input-field:valid ~ label{
+    top: -8px;
+    left: 12px;
+    font-size: 12px;
+    color: #7931f4;
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+.input-field:valid ~ label{
+    color: #555;
+}
+
+.esqueceuasenha{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+}
+
+#check{
+    margin-right: 10px;
+}
+
+section .esqueceu-link{
+    font-weight: 500;
+    text-decoration: none;
+    color: #7931f4;
+}
+
+.input-submit{
+    font-size: 15px;
+    color: #fff;
+    background: #7931f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-submit:hover{
+    background-color: #260264;
+}
+
+.criar-conta{
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+}
+
+.criar-conta p{
+    font-size: 14px;
+    color: #333;
+}
+
+.criar-conta p>a{
+    text-decoration: none;
+}
